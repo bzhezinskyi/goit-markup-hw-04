@@ -141,6 +141,8 @@ li {
 }
 
 .header-contacts .link {
+	display: flex;
+	align-items: center;
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
@@ -245,18 +247,27 @@ li {
 .peculiarities .item:nth-child(4n) {
 	margin-right: 0px;
 }
-.peculiarities .icon {
-	display: inline-block;
-	width: 270px;
-	height: 120px;
 
-	padding-top: 25px;
-	padding-right: 100px;
-	padding-bottom: 25px;
-	padding-left: 100px;
+.peculiarities .icon-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 120px;
+	margin-bottom: 30px;
 
 	background: #f5f4fa;
 	border-radius: 4px;
+}
+
+.peculiarities .icon {
+	/* display: inline-block; */
+	width: 70px;
+	height: 70px;
+
+	/* padding-top: 25px;
+	padding-right: 100px;
+	padding-bottom: 25px;
+	padding-left: 100px; */
 }
 
 /* Чем мы занимаемся */
@@ -294,6 +305,7 @@ li {
 	text-align: center;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
+	background-color: var(--header-bacground-color);
 }
 
 .team .item:nth-child(4n) {
@@ -394,13 +406,19 @@ li {
 .client .item {
 	width: 170px;
 	height: 92px;
-	padding: 16px 32px;
-	border: 1px solid #afb1b8;
-	border-radius: 4px;
+	/* padding: 16px 32px; */
 }
 
 .client .link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: var(--icon-color);
+
+	border: 1px solid;
+	border-radius: 4px;
+	width: 100%;
+	height: 100%;
 }
 
 .client .link:hover,
@@ -475,6 +493,12 @@ li {
 	flex-wrap: wrap;
 }
 
+.projects .link {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
 .projects .item {
 	box-sizing: border-box;
 
@@ -491,8 +515,8 @@ li {
 	margin-right: 0px;
 }
 
-.projects .item:hover,
-.projects .item:focus {
+.projects .link:hover,
+.projects .link:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -567,6 +591,7 @@ li {
 
 .footer .container {
 	display: flex;
+	align-items: baseline;
 }
 
 .footer .blok + .blok {
@@ -574,7 +599,7 @@ li {
 }
 
 .footer .blok-titel {
-	margin-top: 12px;
+	/* margin-top: 12px; */
 	margin-bottom: 20px;
 
 	font-weight: 700;
