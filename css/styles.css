@@ -156,6 +156,12 @@ li {
   color: var(--activation-color);
 }
 
+.header-contacts .icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--text-color);
+}
+
 /* index */
 /* Шапка */
 
